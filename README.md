@@ -1,6 +1,11 @@
 # Documentation Medphys Web App - X-Ray Machine Quality Report
 
 This project is a web application developed in PHP, HTML, JavaScript, and CSS that helps medical physicists create quality reports for X-ray machines. The application allows users to enter the necessary data through a form, upload report photos, and export the data as JSON to a MAKE webhook. The application also integrates with a SQL database to store and retrieve the entered data. MAKE uses a predefined Google Documents template to receive the variables and present them in a detailed report ready for export as a PDF and sending to the client.
+![image](https://github.com/user-attachments/assets/53277577-963b-47e3-b676-0d48285f8581)
+![image](https://github.com/user-attachments/assets/57a50963-70c3-4a8f-88b3-a58e3b783436)
+![image](https://github.com/user-attachments/assets/e3ba253f-dd82-43a5-ab83-9de95fe1bc3c)
+![image](https://github.com/user-attachments/assets/9e23c499-9ecd-4da5-b5fb-b43d28ce3cd0)
+
 
 
 ## Features
