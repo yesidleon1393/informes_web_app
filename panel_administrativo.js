@@ -43,7 +43,6 @@ function loadInformes() {
                 row.dataset.id = informe.id;
                 row.innerHTML = `
                     <td>${informe.id}</td>
-                    <td>${informe.nombre_equipo}</td>
                     <td>${informe.nombre_cliente}</td>
                     <td>${informe.fecha_evaluacion}</td>
                     <td>${informe.telefono}</td>
@@ -64,14 +63,14 @@ function loadInformes() {
             tableBody.appendChild(fragment);
         } else {
             const row = document.createElement('tr');
-            row.innerHTML = '<td colspan="6">No se encontraron informes.</td>';
+            row.innerHTML = '<td colspan="5">No se encontraron informes.</td>';
             tableBody.appendChild(row);
         }
     })
     .catch(error => {
         console.error('Error:', error);
         const row = document.createElement('tr');
-        row.innerHTML = '<td colspan="6">Error al cargar los informes.</td>';
+        row.innerHTML = '<td colspan="5">Error al cargar los informes.</td>';
         document.getElementById('informes').appendChild(row);
     });
 }
@@ -94,7 +93,7 @@ function exportInforme(id) {
             throw new Error(informe.message || 'Error desconocido');
         }
 
-        const webhookUrl = 'https://hook.eu2.make.com';
+        const webhookUrl = 'https://hook.eu2.make.com/your-webhook-url'; // Cambiar por la URL de tu webhook
         return fetch(webhookUrl, {
             method: 'POST',
             headers: {

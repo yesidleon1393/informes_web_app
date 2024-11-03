@@ -29,6 +29,25 @@ $itubo_fechafabricacion = $_POST['itubo_fechafabricacion'];
 $itubo_cargatrabajopacientes = $_POST['itubo_cargatrabajopacientes'];
 $itubo_cargatrabajo_mamin = $_POST['itubo_cargatrabajo_mamin'];
 $itubo_focofinogrueso = $_POST['itubo_focofinogrueso'];
+$itubo_focofinogrueso2 = $_POST['itubo_focofinogrueso2'];
+$objeto_prueba = $_POST['objeto_prueba'];
+$tension_kv = $_POST['tension_kv'];
+$corriente_ma = $_POST['corriente_ma'];
+$carga_mas = $_POST['carga_mas'];
+$objeto_salida = $_POST['objeto_salida'];
+$tension_fuga_kv = $_POST['tension_fuga_kv'];
+$corriente_fuga_ma = $_POST['corriente_fuga_ma'];
+$carga_fuga_mas = $_POST['carga_fuga_mas'];
+$distancia_foco = $_POST['distancia_foco'];
+$tecnica_frecuente = $_POST['tecnica_frecuente'];
+$tension_tension_kv = $_POST['tension_tension_kv'];
+$carga_tension_kv = $_POST['carga_tension_kv'];
+$corriente_tension_kv = $_POST['corriente_tension_kv'];
+$distancia_tension_cm = $_POST['distancia_tension_cm'];
+$valores_diferentes = $_POST['valores_diferentes'];
+$distancia_estrella = $_POST['distancia_estrella'];
+$distancia_foco_imagen = $_POST['distancia_foco_imagen'];
+$numero_objetos = $_POST['numero_objetos'];
 $eq_marca = $_POST['eq_marca'];
 $eq_modelo = $_POST['eq_modelo'];
 $eq_serie = $_POST['eq_serie'];
@@ -137,6 +156,25 @@ if ($result->num_rows > 0) {
         itubo_cargatrabajopacientes='$itubo_cargatrabajopacientes',
         itubo_cargatrabajo_mamin='$itubo_cargatrabajo_mamin',
         itubo_focofinogrueso='$itubo_focofinogrueso',
+        itubo_focofinogrueso2='$itubo_focofinogrueso2',
+        objeto_prueba='$objeto_prueba',
+        tension_kv='$tension_kv',
+        corriente_ma='$corriente_ma',
+        carga_mas='$carga_mas',
+        objeto_salida='$objeto_salida',
+        tension_fuga_kv='$tension_fuga_kv',
+        corriente_fuga_ma='$corriente_fuga_ma',
+        carga_fuga_mas='$carga_fuga_mas',
+        distancia_foco='$distancia_foco',
+        tecnica_frecuente='$tecnica_frecuente',
+        tension_tension_kv='$tension_tension_kv',
+        carga_tension_kv='$carga_tension_kv',
+        corriente_tension_kv='$corriente_tension_kv',
+        distancia_tension_cm='$distancia_tension_cm',
+        valores_diferentes='$valores_diferentes',
+        distancia_estrella='$distancia_estrella',
+        distancia_foco_imagen='$distancia_foco_imagen',
+        numero_objetos='$numero_objetos',
         figura1='$figura1',
         figura2='$figura2',
         eq_marca='$eq_marca',
@@ -169,9 +207,9 @@ if ($result->num_rows > 0) {
 } else {
     // Si el ID no existe, realiza un INSERT
     $sql = "INSERT INTO informes (
-        id, nombre_equipo, marca_equipo, modelo_equipo, numero_serie, fecha_evaluacion, nombre_cliente, direccion, telefono, nit, rep_legal, persona_contacto, cargo, correo_electronico, fecha_fabricacion, operacion, sistema_adquisicion, ubicacion_equipo, itubo_marca, itubo_modelo, itubo_serie, itubo_tensionmax, itubo_corrientemax, itubo_fechafabricacion, itubo_cargatrabajopacientes, itubo_cargatrabajo_mamin, itubo_focofinogrueso, figura1, figura2, eq_marca, eq_modelo, eq_serie, eq_calibracion, multimetro_marca, multimetro_modelo, multimetro_serie, detector_marca, detector_modelo, detector_serie, detector_calibracion, figura3, figura4, figura5, figura6, figura7, figura8, figura9, figura10, figura11, figura12_izq, figura13_der, figura13, figura14, figura15, figura16)
+        id, nombre_equipo, marca_equipo, modelo_equipo, numero_serie, fecha_evaluacion, nombre_cliente, direccion, telefono, nit, rep_legal, persona_contacto, cargo, correo_electronico, fecha_fabricacion, operacion, sistema_adquisicion, ubicacion_equipo, itubo_marca, itubo_modelo, itubo_serie, itubo_tensionmax, itubo_corrientemax, itubo_fechafabricacion, itubo_cargatrabajopacientes, itubo_cargatrabajo_mamin, itubo_focofinogrueso, itubo_focofinogrueso2, objeto_prueba, tension_kv, corriente_ma, carga_mas, objeto_salida, tension_fuga_kv, corriente_fuga_ma, carga_fuga_mas, distancia_foco, tecnica_frecuente, tension_tension_kv, carga_tension_kv, corriente_tension_kv, distancia_tension_cm, valores_diferentes, distancia_estrella, distancia_foco_imagen, numero_objetos, figura1, figura2, eq_marca, eq_modelo, eq_serie, eq_calibracion, multimetro_marca, multimetro_modelo, multimetro_serie, detector_marca, detector_modelo, detector_serie, detector_calibracion, figura3, figura4, figura5, figura6, figura7, figura8, figura9, figura10, figura11, figura12_izq, figura13_der, figura13, figura14, figura15, figura16)
         VALUES (
-        '$id', '$nombre_equipo', '$marca_equipo', '$modelo_equipo', '$numero_serie', '$fecha_evaluacion', '$nombre_cliente', '$direccion', '$telefono', '$nit', '$rep_legal', '$persona_contacto', '$cargo', '$correo_electronico', '$fecha_fabricacion', '$operacion', '$sistema_adquisicion', '$ubicacion_equipo', '$itubo_marca', '$itubo_modelo', '$itubo_serie', '$itubo_tensionmax', '$itubo_corrientemax', '$itubo_fechafabricacion', '$itubo_cargatrabajopacientes', '$itubo_cargatrabajo_mamin', '$itubo_focofinogrueso', '$figura1', '$figura2', '$eq_marca', '$eq_modelo', '$eq_serie', '$eq_calibracion', '$multimetro_marca', '$multimetro_modelo', '$multimetro_serie', '$detector_marca', '$detector_modelo', '$detector_serie', '$detector_calibracion', '$figura3', '$figura4', '$figura5', '$figura6', '$figura7', '$figura8', '$figura9', '$figura10', '$figura11', '$figura12_izq', '$figura13_der', '$figura13', '$figura14', '$figura15', '$figura16')";
+        '$id', '$nombre_equipo', '$marca_equipo', '$modelo_equipo', '$numero_serie', '$fecha_evaluacion', '$nombre_cliente', '$direccion', '$telefono', '$nit', '$rep_legal', '$persona_contacto', '$cargo', '$correo_electronico', '$fecha_fabricacion', '$operacion', '$sistema_adquisicion', '$ubicacion_equipo', '$itubo_marca', '$itubo_modelo', '$itubo_serie', '$itubo_tensionmax', '$itubo_corrientemax', '$itubo_fechafabricacion', '$itubo_cargatrabajopacientes', '$itubo_cargatrabajo_mamin', '$itubo_focofinogrueso', '$itubo_focofinogrueso2', '$objeto_prueba', '$tension_kv', '$corriente_ma', '$carga_mas', '$objeto_salida', '$tension_fuga_kv', '$corriente_fuga_ma', '$carga_fuga_mas', '$distancia_foco', '$tecnica_frecuente', '$tension_tension_kv', '$carga_tension_kv', '$corriente_tension_kv', '$distancia_tension_cm', '$valores_diferentes', '$distancia_estrella', '$distancia_foco_imagen', '$numero_objetos', '$figura1', '$figura2', '$eq_marca', '$eq_modelo', '$eq_serie', '$eq_calibracion', '$multimetro_marca', '$multimetro_modelo', '$multimetro_serie', '$detector_marca', '$detector_modelo', '$detector_serie', '$detector_calibracion', '$figura3', '$figura4', '$figura5', '$figura6', '$figura7', '$figura8', '$figura9', '$figura10', '$figura11', '$figura12_izq', '$figura13_der', '$figura13', '$figura14', '$figura15', '$figura16')";
 }
 
 if ($conn->query($sql) === TRUE) {

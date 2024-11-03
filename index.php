@@ -21,7 +21,9 @@ if (!isset($_SESSION['user_id'])) {
     <!-- Header -->
     <header class="bg-dark text-white py-3 mb-4">
         <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="h3 mb-0">Medphys Apps</h1>
+        <a class="navbar-brand" href="index.php">
+                <h1 class="h3 mb-0">Medphys Apps</h1>
+            </a>
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,16 +32,34 @@ if (!isset($_SESSION['user_id'])) {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.php">Panel Admin</a>
+                                <a class="nav-link active" aria-current="page" href="index.php">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span class="nav-link-tooltip">Panel Administrativo</span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="nuevo.php">Nuevo Informe</a>
+                                <a class="nav-link" href="nuevo.php">
+                                    <i class="fas fa-file"></i>
+                                    <span class="nav-link-tooltip">Nuevo Informe</span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="register.php">Nuevo Usuario</a>
+                                <a class="nav-link" href="register.php">
+                                    <i class="fas fa-user-plus"></i>
+                                    <span class="nav-link-tooltip">Nuevo Usuario</span>
+                                </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="logout.php">Salir</a>
+                                <a class="nav-link" href="https://drive.google.com/drive/folders/1q2iLeKxOMRhh6ovDOh4KFesLuMEAH3Zr?usp=sharing">
+                                    <i class="fab fa-google-drive"></i>
+                                    <span class="nav-link-tooltip">Ir a Drive</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="logout.php">
+                                    <i class="fas fa-sign-out-alt"></i>
+                                    <span class="nav-link-tooltip">Salir</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -56,7 +76,6 @@ if (!isset($_SESSION['user_id'])) {
                 <thead class="table-dark">
                     <tr>
                         <th>ID</th>
-                        <th>Nombre Equipo</th>
                         <th>Nombre Cliente</th>
                         <th>Fecha Evaluación</th>
                         <th>Contacto</th>
