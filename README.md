@@ -3,6 +3,7 @@
 This project is a web application developed in PHP, HTML, JavaScript, and CSS that helps medical physicists create quality reports for X-ray machines. The application allows users to enter the necessary data through a form, upload report photos, and export the data as JSON to a MAKE webhook. The application also integrates with a SQL database to store and retrieve the entered data. MAKE uses a predefined Google Documents template to receive the variables and present them in a detailed report ready for export as a PDF and sending to the client.
 ![image](https://github.com/user-attachments/assets/53277577-963b-47e3-b676-0d48285f8581)
 ![image](https://github.com/user-attachments/assets/57a50963-70c3-4a8f-88b3-a58e3b783436)
+![image](https://github.com/user-attachments/assets/1fa5dc54-0f54-448d-91bb-2a51d629ae46)
 ![image](https://github.com/user-attachments/assets/e3ba253f-dd82-43a5-ab83-9de95fe1bc3c)
 ![image](https://github.com/user-attachments/assets/9f562696-6d0e-450a-a34c-3ad599547a0f)
 ![image](https://github.com/user-attachments/assets/29966ac3-b00a-4554-a50f-a98c7b0bc737)
